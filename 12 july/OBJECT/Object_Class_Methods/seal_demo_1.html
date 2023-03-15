@@ -1,0 +1,21 @@
+<html>
+	<body><h1>
+		<script>
+			//read-yes,updatevalue-yes,delete property-no,addproperty-no
+			var emp = {
+						name : 'sachin',
+						age : 35
+					  }
+			Object.seal(emp);
+			
+			console.log(emp.age); //yes
+			emp.age = 40; //yes
+			
+			delete emp.age; // no delete
+			console.log(emp); //age is still there
+			
+			emp.add = 'bang'; //No 
+			console.log(emp)
+		</script>
+	</body>
+</html>

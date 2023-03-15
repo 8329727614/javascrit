@@ -1,0 +1,28 @@
+<HTML>
+<BODY>
+<h1>
+	<script>
+	   // array of objects
+		var employees = [
+				{empId : 101,name : "sachin"},
+				{empId : 102,name : "AAAAAA"},
+				{empId : 103,name : "BBBBBBB"},
+			];
+			
+		for(i=0;i<employees.length;i++){
+			var emp = employees[i];
+			console.log(emp);
+			
+			for(key in emp){
+				document.write(key+" - "+emp[key])
+				document.write("<br>")
+			} 
+			document.write("<hr>")
+			
+		}
+		
+		
+		
+	</script>
+</BODY>
+</HTML>

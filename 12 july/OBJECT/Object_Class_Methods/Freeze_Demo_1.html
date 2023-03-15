@@ -1,0 +1,33 @@
+<HTML>
+<BODY>
+<h1>
+	<script>	
+		//Nothing can be added to or removed from the properties set of a frozen object
+		//read-yes,update-no,delete-no
+		var Student = {
+			name : 'Deepak',
+			age : 35
+		}
+		console.log(Student);
+		delete Student.age;
+		console.log(Student);
+		
+		var Employee = {
+			empId : 101,
+			sal : 5000
+		}
+		console.log(Employee);
+		Object.freeze(Employee);
+		
+		delete Employee.sal;
+		console.log(Employee);
+		
+		Employee.sal = 6000;
+		console.log(Employee);		
+		
+		Employee.age = 35;
+		console.log(Employee);
+	</script>
+</BODY>
+
+</HTML>
